@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    border: 1px solid red !important;
+}
+/*Global Rules*/
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+img{
+    border-radius: 16px;
+}
+.ml-70{
+    margin-left: 70px;
+}
+.mr-70{
+    margin-right: 70px;
+}
+.mt-104{
+    margin-top: 104px;
+}
+.mb-104{
+    margin-bottom: 104px;
+}
+.p-styling,a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #2B2B2B;
+}
+.h1-styling{
+    font-weight: 600;
+    font-size: 50.52px;
+    line-height: 62px;
+}
+nav .burger {
+    display: none;
+}
+/*End Global Rules*/
+
+/*Styling Header*/
+header{
+    height: 100vh;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 33px;
+    width: 100%;
+}
+nav ul, .burger {
+    display: flex;
+    margin-right: 29px;
+}
+nav .logo{
+    width: 91px;
+    height: 26px;
+    margin-left: 88px;
+}
+nav ul li{
+    margin-right: 40px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1 {
+    font-size: 4.5357vw;
+    width: 100%;
+    text-align: center;
+}
+.hero p{
+    text-align: center;
+}
+.hero button {
+    height: 56px;
+    width: 251px;
+    border-radius: 67px;
+    padding: 16px;
+    background-color: #285E67;
+    font-size:21.33px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #FFFFFF;
+    border:none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.hero .hero-imgs{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.hero .hero-imgs img{
+    width: 40vw;
+}
+/*End Header*/
+
+/*Stylig Wellbeing*/
+.wellbeing{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.wellbeing h1 {
+    margin-bottom: 61px;
+}
+.wellbeing .container{
+    display: flex;
+    gap: 65px;
+}
+.wellbeing .container .card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 260px;
+}
+.wellbeing-yoga{
+    text-align: center;
+}
+.wellbeing-yoga img{
+    width: 250px;
+}
+/*End Wellbeing*/
+
+@media screen and (max-width:1024px){
+    .wellbeing .wellbeing-yoga{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    nav ul {
+        display: none;
+    }
+    nav .burger {
+        display: block;
+    }
+}
+@media screen and (max-width:430px){
+    .hero{
+        margin-right: 35px;
+        margin-left: 35px;
+    }
+    .hero .hero-imgs{
+        flex-direction: column;
+    }
+    .wellbeing .wellbeing-yoga{
+        display: none;
+    }
+    .wellbeing .container{
+        flex-direction: column;
+    }
+}
