@@ -35,7 +35,7 @@ img{
 }
 .h1-styling{
     font-weight: 600;
-    font-size: 50.52px;
+    font-size:50px;
     line-height: 62px;
 }
 nav .burger {
@@ -73,7 +73,7 @@ nav ul li{
     align-items: center;
 }
 .hero h1 {
-    font-size: 4.5357vw;
+    font-size: 4.3357vw;
     width: 100%;
     text-align: center;
 }
@@ -98,7 +98,8 @@ nav ul li{
     width: 100%;
     margin-top: 30px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10%;
 }
 .hero .hero-imgs img{
     width: 40vw;
@@ -110,6 +111,7 @@ nav ul li{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #F4F4F4;
     
 }
 .wellbeing h1 {
@@ -137,6 +139,9 @@ nav ul li{
     .wellbeing .wellbeing-yoga{
         display: none;
     }
+    .hero .hero-imgs img{
+        width: 30.6527vw;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -160,5 +165,4 @@ nav ul li{
     }
     .wellbeing .container{
         flex-direction: column;
-    }
-}
+    }}
