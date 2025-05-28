@@ -113,7 +113,7 @@ nav ul li{
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    background-color: #a3a2a2;
+    background-color: #f0f0f0;
     
 }
 .wellbeing-info{
@@ -138,36 +138,59 @@ nav ul li{
 .wellbeing-yoga{
     text-align: center;
 }
+/*End Wellbeing*/
+ /*Fresh styling*/
+.fresh{
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+.fresh > img{
+    width: 42vw;
+    height: 80vh;
+    max-width: 50%;
+}
+.fresh .fresh-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fresh .fresh-info h1{
+    line-height:  85px;
+}
+.fresh .fresh-info > p{
+    padding-bottom: 50px;
+}
+.fresh .container .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.fresh .container .card img{
+    padding-right: 23px;
+}
+ /*End Fresh*/
 
 @media screen and (max-width:1024px){
-    nav{
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-    .hero{
-        padding-left: 40px;
-        padding-right: 40px;
+    header{
+        height: auto;
     }
     .hero h1{
         margin-top: 40px;
-        font-size: 3.8vw;
     }
     .hero p{
         width: 71.1111vw;
-        margin-left: auto;
-        margin-right: auto;
         font-size: 17px;
     }
     .hero .hero-imgs{
-        gap: 2.5vw;
+        gap: 3.3333vw;
     }
     .hero .hero-imgs img{
         width: 38vw;
         max-width: 400px;
     }
-
     .wellbeing{
-        padding: 50px 40px;
         margin-top: 60px;
     }
     .wellbeing h1 {
@@ -177,12 +200,12 @@ nav ul li{
     }
     .wellbeing .container{
         gap: 30px;
-        flex-wrap: wrap;
     }
     .wellbeing .container .card{
         width: calc(50% - 15px);
         max-width: 300px;
         align-items: center;
+        text-align: center;
     }
     .wellbeing-info{
         padding-right: 0;
@@ -190,12 +213,27 @@ nav ul li{
     .wellbeing .wellbeing-yoga{
         display: none;
     }
+    
+    .fresh > img{
+        height:100vh;
+        object-fit: cover;
+        align-self: stretch;
+    }
+    .fresh .fresh-info > p{
+    padding-bottom: 25px;
+    }
+    .fresh .fresh-info .container .card{
+        margin-bottom: 0;
+    }
+    .fresh .fresh-info .container .card p {
+        color: #285e67;
+    }
 }
 
 @media screen and (max-width:768px){
     nav{
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 35px;
+        margin-left: 35px;
         padding-top: 20px;
     }
     nav ul{
@@ -204,14 +242,12 @@ nav ul li{
     nav .burger{
         display: block;
     }
-
     .hero{
         padding: 30px 20px;
     }
     .hero h1{
         font-size: 30px;
         margin-top: 20px;
-        line-height: 1.4;
     }
     .hero p {
         width: 100%;
@@ -220,8 +256,7 @@ nav ul li{
         margin-bottom: 20px;
     }
     .hero button {
-        width: 90%;
-        max-width: 280px;
+        width: 211px;
         font-size: 18px;
         margin-top: 20px;
         margin-bottom: 30px;
@@ -236,17 +271,17 @@ nav ul li{
         width: 100%;
         max-width: 400px;
     }
-
     .wellbeing{
         margin-top: 36px;
         padding: 0;
         text-align: center;
     }
     .wellbeing-info{
-        padding-right:0 ;
+        padding-right:0;
+        width: 100%;
     }
     .wellbeing h1 {
-        font-size: 40px;
+        font-size: 30px;
         margin-bottom: 30px;
     }
     .wellbeing .container{
