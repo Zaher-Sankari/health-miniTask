@@ -107,36 +107,40 @@ nav ul li{
 /*End Header*/
 
 /*Stylig Wellbeing*/
-.wellbeing{
+.wellbeing,.eat{
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     background-color: #f0f0f0;
     
 }
-.wellbeing-info{
+.wellbeing-info, .eat-info{
     padding: 51px 112px 51px 0 ;
 }
-.wellbeing h1 {
+.wellbeing h1, .eat h1 {
     margin-bottom: 61px;
 }
-.wellbeing .container{
+.wellbeing .container, .eat .container{
     display: flex;
     gap: 65px;
 }
-.wellbeing .container .card{
+.wellbeing .container .card,
+.eat .container .card{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    text-align: left;
     width: 260px;
 }
-.wellbeing .container .card img{
+.wellbeing .container .card img,
+.eat .container .card img{
     margin-bottom: 20px;
 }
-.wellbeing-yoga{
+.wellbeing-yoga , .eat-info{
     text-align: center;
 }
 /*End Wellbeing*/
+
  /*Fresh styling*/
 .fresh{
     display: flex;
@@ -173,7 +177,25 @@ nav ul li{
     padding-right: 23px;
 }
  /*End Fresh*/
-
+/* Forest*/
+.forest{
+    height: 667px;
+    background: url("./../imgs/forest.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    position: relative;
+}
+.forest .forest-info{
+    width: 650px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+/*End forst*/
 @media screen and (max-width:1024px){
     header{
         height: auto;
@@ -192,27 +214,31 @@ nav ul li{
         width: 38vw;
         max-width: 400px;
     }
-    .wellbeing{
+    .wellbeing,.eat{
         margin-top: 60px;
     }
-    .wellbeing h1 {
+    .wellbeing h1,
+    .eat h1 {
         font-size: 50.5px;
         margin-bottom: 40px;
         text-align: center;
     }
-    .wellbeing .container{
+    .wellbeing .container,
+    .eat .container{
         gap: 30px;
     }
-    .wellbeing .container .card{
+    .wellbeing .container .card,
+    .eat .container .card{
         width: calc(50% - 15px);
         max-width: 300px;
         align-items: center;
         text-align: center;
     }
-    .wellbeing-info{
+    .wellbeing-info , .eat-info{
         padding-right: 0;
     }
-    .wellbeing .wellbeing-yoga{
+    .wellbeing .wellbeing-yoga,
+     .eat .eat-fruit{
         display: none;
     }
     .fresh{
@@ -280,31 +306,29 @@ nav ul li{
         width: 100%;
         max-width: 400px;
     }
-    .wellbeing{
+    .wellbeing , .eat{
         margin-top: 36px;
         padding: 0;
         text-align: center;
     }
-    .wellbeing-info{
+    .wellbeing-info , .eat-info{
         padding-right:0;
         width: 100%;
     }
-    .wellbeing h1 {
+    .wellbeing h1 , .eat h1 {
         font-size: 30px;
         margin-bottom: 30px;
     }
-    .wellbeing .container{
+    .wellbeing .container ,.eat .container{
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
-    .wellbeing .container .card{
+    .wellbeing .container .card,
+    .eat .container .card{
         width: 100%;
         max-width: 380px;
         align-items: center;
-    }
-    .wellbeing .wellbeing-yoga{
-        display: none;
     }
     .fresh {
         flex-direction: column;
