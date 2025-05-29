@@ -15,12 +15,10 @@ ul{
 img{
     border-radius: 16px;
 }
-.ml-70{
+ main{
     margin-left: 70px;
-}
-.mr-70{
     margin-right: 70px;
-}
+ }
 .mt-104{
     margin-top: 104px;
 }
@@ -142,21 +140,26 @@ nav ul li{
  /*Fresh styling*/
 .fresh{
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
     gap: 50px;
 }
-.fresh > img{
-    width: 42vw;
-    height: 80vh;
-    max-width: 50%;
+.fresh .img-container{
+    width: 50%;
+    height: 578px;
 }
+.fresh .img-container img{
+    height: 100%;
+    width: 100%;
+     object-fit: cover;
+    border-radius: 16px;
+ }
 .fresh .fresh-info{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 50%;
 }
 .fresh .fresh-info h1{
-    line-height:  85px;
+    padding-bottom: 50px;
 }
 .fresh .fresh-info > p{
     padding-bottom: 50px;
@@ -164,7 +167,6 @@ nav ul li{
 .fresh .container .card{
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-bottom: 50px;
 }
 .fresh .container .card img{
@@ -213,17 +215,20 @@ nav ul li{
     .wellbeing .wellbeing-yoga{
         display: none;
     }
-    
-    .fresh > img{
-        height:100vh;
-        object-fit: cover;
-        align-self: stretch;
+    .fresh{
+        gap: 30px;
+    }
+    .fresh .fresh-info h1 {
+    line-height:  1;
+    font-size: 45px;
+    padding-bottom: 40px;
     }
     .fresh .fresh-info > p{
-    padding-bottom: 25px;
+        padding-bottom: 25px;
+        font-size: 14px;
     }
     .fresh .fresh-info .container .card{
-        margin-bottom: 0;
+        margin-bottom: 40px;
     }
     .fresh .fresh-info .container .card p {
         color: #285e67;
@@ -231,6 +236,10 @@ nav ul li{
 }
 
 @media screen and (max-width:768px){
+    main {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
     nav{
         margin-right: 35px;
         margin-left: 35px;
@@ -243,7 +252,7 @@ nav ul li{
         display: block;
     }
     .hero{
-        padding: 30px 20px;
+        padding: 30px 20px 0;
     }
     .hero h1{
         font-size: 30px;
@@ -297,4 +306,27 @@ nav ul li{
     .wellbeing .wellbeing-yoga{
         display: none;
     }
+    .fresh {
+        flex-direction: column;
+        align-items: center;
+    }
+    .fresh .img-container{
+        width: 100%;
+    }
+    .fresh .fresh-info{
+        width: 100%;
+    }
+    .fresh .fresh-info h1 {
+        line-height:  1;
+        font-size: 40px;
+        text-align: center;
+    }
+    .fresh .fresh-info > p  {
+        text-align: center;
+    }
+    .fresh .fresh-info .container .card{
+        width: 100%;
+        font-size: 14px;
+    }
+
 }
